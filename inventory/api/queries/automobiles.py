@@ -1,10 +1,9 @@
-from pymongo import MongoClient
+
 from bson.objectid import ObjectId
 from ..client import Queries
 
-client = MongoClient('localhost', 27017)
 
-class InventoryQueries(Queries):
+class AutomobileQueries(Queries):
     DB_NAME = "inventory"
     COLLECTION = "automobiles"
 

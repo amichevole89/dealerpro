@@ -24,3 +24,14 @@ class Sale(BaseModel):
     date: str
     href: str
     id: ObjectId
+
+class CreditApplication(BaseModel):
+    id: ObjectId
+    customer: Customer
+    automobile: AutomobileVO
+    salesperson: Salesperson
+    price: float
+    credit_score: float
+    approved: bool
+    date: str
+
