@@ -1,9 +1,6 @@
 from pydantic import BaseModel
 
 class AutomobileVO(BaseModel):
-    year: int
-    model: str
-    color: str
     vin: str
     href: str
 
