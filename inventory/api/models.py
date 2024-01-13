@@ -5,14 +5,14 @@ class Manufacturer(BaseModel):
     name: str
     id: ObjectId
 
-class Model(BaseModel):
+class VehicleModel(BaseModel):
     name: str
     manufacturer: Manufacturer
     id: ObjectId
 
 class Automobile(BaseModel):
     year: int
-    model: Model
+    model: VehicleModel
     color: str
     vin: str
     id: ObjectId
